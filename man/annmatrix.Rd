@@ -22,7 +22,7 @@ colanns(x, names)
 
 colanns(x, names) <- value
 
-`@.annmatrix`(object, name)
+\method{@}{annmatrix}(object, name)
 
 \method{@}{annmatrix}(object, name) <- value
 

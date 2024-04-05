@@ -5,6 +5,7 @@
 \alias{as.annmatrix}
 \alias{as.annmatrix.default}
 \alias{as.annmatrix.matrix}
+\alias{as.annmatrix.annmatrix}
 \alias{as.matrix.annmatrix}
 \alias{is.annmatrix}
 \title{Convert annmatrix Objects to and from Other Types}
@@ -14,6 +15,8 @@ as.annmatrix(x)
 \method{as.annmatrix}{default}(x)
 
 \method{as.annmatrix}{matrix}(x)
+
+\method{as.annmatrix}{annmatrix}(x)
 
 \method{as.matrix}{annmatrix}(x, ...)
 

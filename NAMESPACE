@@ -1,5 +1,6 @@
 S3method(as.annmatrix,default)
 S3method(as.annmatrix,matrix)
+S3method(as.annmatrix,annmatrix)
 S3method(as.matrix,annmatrix)
 S3method(print,annmatrix)
 S3method("[",annmatrix)

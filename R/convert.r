@@ -58,6 +58,12 @@ as.annmatrix.matrix <- function(x) {
 
 #' @rdname convert
 #' @export
+as.annmatrix.annmatrix <- function(x) {
+  x
+}
+
+#' @rdname convert
+#' @export
 as.matrix.annmatrix <- function(x, ...) {
   attr(x, ".annmatrix.rann") <- NULL
   attr(x, ".annmatrix.cann") <- NULL
