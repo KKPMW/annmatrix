@@ -5,6 +5,7 @@ Version 0.1.3 [TBD]
 
 BUG FIXES:
 
+ * 'cbind(..., deparse.level = n)' no longer treats 'deparse.level' as another element.
  * 'cbind(X, Y)' when X is 'annmatrix' and Y is a regular matrix now works without errors.
  * Single argument operators like '!X' and '-X' now work on 'annmatrix' objects without errors.
  * 'as.annmatrix(X)' no longer removes existing row and column annotations when X is 'annmatrix'.

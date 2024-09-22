@@ -60,7 +60,7 @@
 #' @author Karolis Koncevičius
 #' @name bind
 #' @export
-rbind.annmatrix <- function(...) {
+rbind.annmatrix <- function(..., deparse.level = 1) {
   args  <- list(...)
 
   # collect all row and column annotations from annmatrix objects
@@ -78,7 +78,7 @@ rbind.annmatrix <- function(...) {
   }
 
   # call regular rbind on the arguments without any annmatrix objects
-  res <- do.call(rbind, args)
+  res <- do.call(rbind, c(args, deparse.level = deparse.level))
 
   # we can only safely continue if the resulting object is a regular matrix
   if (all(class(res) == c("matrix", "array"))) {
@@ -164,7 +164,7 @@ rbind.annmatrix <- function(...) {
 
 #' @rdname bind
 #' @export
-cbind.annmatrix <- function(...) {
+cbind.annmatrix <- function(..., deparse.level = 1) {
   args  <- list(...)
 
   # follows the same logic as rbind, look there for comments
@@ -180,7 +180,7 @@ cbind.annmatrix <- function(...) {
     }
   }
 
-  res <- do.call(cbind, args)
+  res <- do.call(cbind, c(args, deparse.level = deparse.level))
 
   if (all(class(res) == c("matrix", "array"))) {
 
