@@ -11,4 +11,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://github.com/karoliskoncevicius/annmatrix
 BugReports: https://github.com/karoliskoncevicius/annmatrix/issues
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2

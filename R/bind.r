@@ -205,7 +205,7 @@ cbind.annmatrix <- function(...) {
         if (length(args[[i]]) == 0) {
           nc <- 0
         } else if (length(dim(args[[i]])) == 2) {
-          nc <- dim(args[[i]])[1]
+          nc <- dim(args[[i]])[2]
         }
         canns[[i]] <- data.frame(matrix(NA, nrow = nc, ncol = length(cnames), dimnames = list(NULL, cnames)))
       }
